@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.bar{
+    overflow: hidden;
+    background-color: rgb(178,69,109);
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+}
+
+.logo{
+    font-size: 35px;
+    float: left;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 5px 5px 15px;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 10px 20px;
+	outline: none;
+	color: #fff;
+    float: right;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.cl-effect-4 a {
+	padding: 0 0 2px;
+}
+
+.cl-effect-4 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+	height: 3px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.yohaku{
+    width: 100%;
+    height: 45px;
+}
+
+.haikei{
+    width: 100%;
+    height: 570px;
+    text-align: center;
+	color: #fff;
+    background-image: url("../images/haikei_cosme2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment:fixed; 
+    position: relative;
+}
+.top{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    color: #fff;
+    font-size: 80px;
+    font-family: serif;
+}
+
+.wrraper{
+    overflow: hidden;
+    width: 70%;
+    margin: 0 auto;
+}
+.content{
+    width: 1000px;
+    display: block;
+    float: left;
+    margin: 30px;
+    border-bottom: solid 5px;
+}
+
+.set{
+    padding: 20px;
+    float: left;
+}
+.title{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+
+.column{
+    width: 700px;
+    display: block;
+    font-family: serif;
+    padding-top: 100px;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.subtitle{
+    font-size: 30px;
+    padding-top: 30px;
+}
+.day{
+    font-size: 15px;
+}
+.column img{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+.button{
+    position: absolute;
+    font-size: 15px;
+    padding: 10px 30px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオサイト</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript">
+        function slideSwitch() {
+            var $active = $('#slideshow img.active');
+
+            if ($active.length == 0) $active = $('#slideshow img:last');
+
+            var $next = $active.next().length ? $active.next() : $('#slideshow img:first');
+
+            $active.addClass('last-active');
+
+            $next.css({
+                    opacity: 0.0
+                })
+                .addClass('active')
+                .animate({
+                    opacity: 1.0
+                }, 1000, function () {
+                    $active.removeClass('active last-active');
+                });
+        }
+
+        $(function () {
+            setInterval("slideSwitch()", 5000);
+        });
+    </script>
+</head>
+
+<body>
+    <section class="bar">
+        <a href="index.html" class="logo">My Portfolio Site</a>
+        <nav class="cl-effect-4">
+            <a href="plofile.html">profile</a>
+            <a href="cosme.html">cosme review</a>
+            <a href="blog.html">blog</a>
+        </nav>
+    </section>
+    
+    <div class="yohaku"></div>
+
+    <div class="diamond_a">
+        <ul class="diamond-grid">
+            <li>
+                <a href="#" target="_blank" class="diamond">
+                    <div class="sample1">
+                        <img src="images/stb2.png" alt="" class="photo1">
+                        <div class="mask">
+                            <div class="caption">スターバックスラテ
+                                <br>×
+                                <br>チョコレートチャンククッキー</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="plofile.html" target="_blank" class="diamond">
+                    <div class="text">profile</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="diamond">
+                    <div class="sample1">
+                        <img src="images/cake.png" alt="" class="photo1">
+                        <div class="mask">
+                            <div class="caption">キルフェボンのフルーツタルト♡</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="diamond_b"></div>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="diamond">
+                    <div class="sample1">
+                        <img src="images/ichigo.png" alt="" class="photo1">
+                        <div class="mask">
+                            <div class="caption">デニーズの
+                                <br>とちおとめのミニパルフェ</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="diamond">
+                    <div class="sample1">
+                        <img src="images/pkt.png" alt="" class="photo1">
+                        <div class="mask">
+                            <div class="caption">パクチー×ラーメンなんて
+                                <br>私得すぎた。</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="diamond">
+                    <div class="sample1">
+                        <img src="images/stb3.png" alt="" class="photo1">
+                        <div class="mask">
+                            <div class="caption">スターバックスの
+                                <br>クリスマス限定カップ
+                                <br>可愛い♡</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <div class="diamond_b"></div>
+            </li>
+            <li>
+                <div class="diamond_b"></div>
+            </li>
+            <li>
+                <a href="blog.html" target="_blank" class="diamond">
+                    <div class="text">blog</div>
+                </a>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="diamond">
+                    <div class="sample1">
+                        <img src="images/jill1_2.png" alt="" class="photo1">
+                        <div class="mask">
+                            <div class="caption">JILLの秋限定LIP
+                                <br>流行りの葡萄色</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="cosme.html" target="_blank" class="diamond">
+                    <div class="text">cosme review</div>
+                </a>
+            </li>
+            <li>
+                <div class="diamond_b"></div>
+            </li>
+            <li>
+                <a href="#" target="_blank" class="diamond">
+                    <div class="sample1">
+                        <img src="images/komeda.png" alt="" class="photo1">
+                        <div class="mask">
+                            <div class="caption">コメダ珈琲の
+                                <br>たっぷりミルクコーヒー</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="big" id="slideshow">
+        <img src="images/disney.png" alt="" width="408" height="408" class="active" >
+        <img src="images/sotugyou.png" alt="" width="408" height="408" >
+    </div>
+
+    <div class="under"></div>
+</body>
+
+</html>

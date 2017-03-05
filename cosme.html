@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオサイト</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/cosme.css">
+    <script type="text/javascript">
+function showMore(btn) {
+   var targetId = btn.getAttribute("href").slice(1);          // 表示対象のid名をhref属性値から得る
+   document.getElementById(targetId).style.display = "block"; // 表示対象の非表示状態を解除
+   btn.parentNode.style.display = "none";                     // 続きを読むボタンを消す
+   return false;                                                        // リンクとして機能しないようfalseを返す
+}
+</script>
+</head>
+
+<body>
+    <section class="bar">
+       <a href="index.html" class="logo">My Portfolio Site</a>
+        <nav class="cl-effect-4">
+            <a href="plofile.html">profile</a>
+            <a href="cosme.html">cosme review</a>
+            <a href="blog.html">blog</a>
+        </nav>
+    </section>
+         
+         <div class="yohaku"></div>
+          
+<ul class="cosme">
+   　<li class="flex-item"><div class="sample1"><img src="./images/con.jpg" alt=""></div>
+          <p>RMK<br>コンシーラーパレット101</p>
+          <p class="readmore-button-box"><a href="#readmore4" onclick="return showMore(this);">詳細</a></p>
+          <p id="readmore4" class="readmore-area">【見た目】RMKらしいスタイリッシュなシルバーのコンパクト。<br>【色味】明るい色と暗い色のコンシーラーとルースパウダーのパレット。<br>【質感】クリームタイプのなめらかなコンシーラー。 <br>【値段】¥5980<br>【感想】目周りをこれで仕上げるととても綺麗な艶感がでる。カバー力もしっかりあり、お気に入り。</p>
+     </li>
+    
+     <li class="flex-item"><div class="sample1"><img src="./images/masu_c.jpg" alt=""></div>
+           <p>インテグレート<br>マツイクマスカラ（カール）</p>
+            <p class="readmore-button-box"><a href="#readmore3" onclick="return showMore(this);">詳細</a></p>
+            <p id="readmore3" class="readmore-area">
+            【見た目】ブラシ側を上から見るとハート側になっていて可愛い。コームタイプのブラシ。<br>【色味】ブラック<br>【値段】¥1200</p>
+      </li>
+      
+      <li class="flex-item"><div class="sample1"><img src="./images/masu_l.jpg" alt=""></div>
+          <p>インテグレート<br>マツイクマスカラ（ロング）</p>
+          <p class="readmore-button-box"><a href="#readmore2" onclick="return showMore(this);">詳細</a></p>
+          <p id="readmore2" class="readmore-area">【見た目】ブラシ側を上から見るとハート側になっていて可愛い。ロングタイプのブラシ。<br>【色味】ブラック<br>【値段】¥1200</p>
+      </li>
+      
+      <li class="flex-item"><div class="sample1"><img src="./images/cosme1.jpg" alt=""></div>
+          <p>JILLSTUART<br>lipblossom<br>22 foreverdianthus</p>
+          <p class="readmore-button-box"><a href="#readmore1" onclick="return showMore(this);">詳細</a></p>
+          <p id="readmore1" class="readmore-area">【見た目】パッケージが可愛く、上部に鏡がついている。<br>【色味】ピンク味の強いボルドー。可愛い秋色。<br>【質感】口紅とグロスの間くらいのテクスチャー。保湿力は高いがベタベタ感はない。<br>【値段】¥2800<br>【感想】とにかく可愛くて気に入った。ヘビロテ決定。</p>
+      </li>
+</ul>
+</body>
+</html>

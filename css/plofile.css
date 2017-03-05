@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+.bar{
+    overflow: hidden;
+    background-color: rgb(178,69,109);
+}
+
+.logo{
+    font-size: 35px;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 5px 5px 15px;
+}
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: 10px 20px;
+	outline: none;
+	color: #fff;
+    float: right;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 1px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+.cl-effect-4 a {
+	padding: 0 0 2px;
+}
+
+.cl-effect-4 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #fff;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.cl-effect-4 a:hover::after,
+.cl-effect-4 a:focus::after {
+	height: 3px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.waku{
+    width: 100%;
+    height: 571px;
+    
+}
+
+.icon{
+    width: 400px;
+    float: left;
+    padding: 85px 85px 85px 250px;
+}
+
+.memo{
+    overflow: hidden;
+    width: 400px;
+    height: 570px;
+    font-family: serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.info{
+    padding: 10px;
+}
+
+.under{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    background-color: rgb(255,123,172);
+}
+
+.sns{
+    
+}
